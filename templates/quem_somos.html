@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Quitanda do Zé</title>
+    <style>
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg bg-success shadow border-bottom border-3 border-dark border-opacity-25">
+            <div class="container">
+                <i class="bi bi-shop-window text-white fw-bolder fs-4 me-1"></i>
+                <a class="navbar-brand text-light fw-bolder" href="#">
+                    <spam class="fw-bold">Quitanda do Zé</spam>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    data-bs-theme="dark"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-semibold" aria-current="page" href="/">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" aria-current="page" href="/quem">Quem somos</a>
+                        </li>
+                       
+                    </ul>
+                    <form action="/busca" method="post" class="d-flex" role="search">
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../static/img1.jpg" class="d-block w-100" alt="José vendendo frutas para crianças">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>COMO TUDO COMEÇOU</h5>
+                    <p>Tudo começou quando Zé, como é carinhosamente chamado, saiu pelas ruas com seu carrinho de mão carregado de frutas e verduras frescas. De porta em porta, ele oferecia seus produtos, conquistando a confiança de seus primeiros clientes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img2.jpg" class="d-block w-100" alt="José nos dias de hoje">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TRAJETÓRIA</h5>
+                     <p >A demanda pelos produtos cresceu, e Zé tomou uma decisão. Ele montou uma modesta barraca na feira municipal, onde a Quitanda do Zé logo se tornou uma parada obrigatória para os moradores da região. A qualidade dos produtos e o atendimento caloroso fizeram com que a Quitanda se destacasse. Com o passar do tempo, Zé e sua equipe permaneceram-se fiéis a seus valores: Produtos de alta qualidade e um atendimento acolhedor. Isso atraiu cada vez mais clientes leais. <strong>MISSÃO: </strong> Nossa missão : fornecer alimentos frescos, saudáveis ​​e saborosos a preços acessíveis. Se comprometemos a atender as necessidades dos clientes com produtos de qualidade superior e a criar um ambiente acolhedor que celebre a comunidade local. <strong>VISÃO: </strong> A visão de Zé é continuar a crescer e a servir a comunidade Ele sonha em expandir o trabalho para outras regiões, oferecendo os sabores de seu local de origem. Ele acredita que a paixão pela qualidade e o compromisso com o cliente são os pilares para um futuro brilhante. <strong>VALORES: </strong> Nossos principais valores são: <strong>Qualidade: </strong> Se esforçamos para fornecer produtos de alta qualidade, cultivados com prontidão. <strong>Honestidade: </strong> Transparência e integridade estão no centro de tudo o que fazemos. <strong>Comunidade: </strong> Somos parte da comunidade e sempre os apoiamos. <strong>Atendimento ao cliente: </strong> Cada cliente é um amigo, tratamos todos com carinho e respeito. <strong>Sustentabilidade: </strong> Nos comprometemos a adotar práticas sustentáveis ​​em nossas operações. Hoje, a Quitanda do Zé é essencial para a vida da comunidade. Continuamos a trabalhar com paixão e dedicação, trazendo a essência do campo para a cidade
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img3.jpg" class="d-block w-100" alt="José em sua quitanda">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>O QUE ESSA QUITANDA REPRESENTA HOJE</h5>
+                    <p>A história da Quitanda do Zé é um lembrete de que, com trabalho árduo, amor pelo que se faz e valores sólidos, é possível transformar um carrinho de mão em uma instituição local, proporcionando qualidade de vida e sabor para todos.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" ariahidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <footer class="border-top bg-success shadow border-3 border-dark border-opacity-25">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-12 col-md-4 text-center text-light">
+                    &copy; 2023 - Quitanda do Zé LTDA-ME<br>
+                    Rua Érico Pimentel Dias, 187, Itapeva/SP
+                    <br>CNPJ 99.999.999/0001-99 <br>
+                </div>
+                <div class="col-12 col-md-4 text-center text-white">
+                    Política de Privacidade<br>Termos de uso<br>Trocas e Devoluções<br>
+                    <a href="/adm" class="text-decoration-none text-dark text-white">
+                        Área administrativa
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 text-center text-white">
+                    Contato pelo Site<br>E-mail: contato@quitandadoze.com.br<br>Cel: (15) 99999-9999
+                    <br>
+                </div>
+            
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
